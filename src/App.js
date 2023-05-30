@@ -2,6 +2,7 @@ import AutoComp from "./components/AutoComp";
 import CardMui from "./components/CardMui";
 import DrawerMenu from "./components/DrawerMenu";
 import Progress from "./components/Progress";
+import ResponsiveGrid from "./components/ResponsiveGrid";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AutoComp />
       <DrawerMenu />
       <Progress/>
+      <ResponsiveGrid/>
     </div>
   );
 }
