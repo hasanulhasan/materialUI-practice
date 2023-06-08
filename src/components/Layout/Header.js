@@ -57,7 +57,7 @@ const Header = () => {
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <ul className='navigation-menu'>
-                <li><Link to={'/home'}>Home</Link></li>
+                <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'/menu'}>Menu</Link></li>
                 <li><Link to={'/about'}>About</Link></li>
                 <li><Link to={'/contact'}>Contact</Link></li>
