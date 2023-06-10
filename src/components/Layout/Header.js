@@ -1,9 +1,10 @@
 import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../../styles/HeaderStyles.css'
+import Logo from '../../images/logo.svg'
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   //menu drawer
@@ -18,8 +19,7 @@ const Header = () => {
         component={'div'}
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <LunchDiningIcon />
-        My Restaurant
+        <img src={Logo} height='70px' width='180px' alt='logo'/>
       </Typography>
       <Divider />
       <ul className='mobile-navigation'>
@@ -52,15 +52,14 @@ const Header = () => {
               component={'div'}
               sx={{ flexGrow: 1 }}
             >
-              <LunchDiningIcon />
-              My Restaurant
+              <img src={Logo} height='70px' width='220px' alt='logo'/>
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <ul className='navigation-menu'>
-                <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/menu'}>Menu</Link></li>
-                <li><Link to={'/about'}>About</Link></li>
-                <li><Link to={'/contact'}>Contact</Link></li>
+                <li><NavLink activeClassName='active' to={'/'}>Home</NavLink></li>
+                <li><NavLink to={'/menu'}>Menu</NavLink></li>
+                <li><NavLink to={'/about'}>About</NavLink></li>
+                <li><NavLink to={'/contact'}>Contact</NavLink></li>
               </ul>
             </Box>
           </Toolbar>

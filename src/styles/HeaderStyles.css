@@ -13,7 +13,10 @@
   text-decoration: none;
   color: white;
 }
-
+.active{
+  color: goldenrod !important;
+  font-weight: bold !important;
+}
 /* Mobile-view */
 .mobile-navigation {
   list-style: none;
