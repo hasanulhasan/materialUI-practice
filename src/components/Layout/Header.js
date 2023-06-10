@@ -16,14 +16,14 @@ const Header = () => {
         color={'goldenrod'}
         variant='h6'
         component={'div'}
-        sx={{ flexGrow: 1, my: 2}}
+        sx={{ flexGrow: 1, my: 2 }}
       >
         <LunchDiningIcon />
         My Restaurant
       </Typography>
-      <Divider/>
+      <Divider />
       <ul className='mobile-navigation'>
-        <li><Link to={'/home'}>Home</Link></li>
+        <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/menu'}>Menu</Link></li>
         <li><Link to={'/about'}>About</Link></li>
         <li><Link to={'/contact'}>Contact</Link></li>
@@ -70,16 +70,18 @@ const Header = () => {
             variant='temporary'
             onClose={handleDraweToggle}
             open={mobileOpen}
-            sx={{ display: { xs: 'block', sm: 'none' }, "& .MuiDrawer-paper":{
-              boxSizing: 'border-box',
-              width: '240px'
-            } }}
+            sx={{
+              display: { xs: 'block', sm: 'none' }, "& .MuiDrawer-paper": {
+                boxSizing: 'border-box',
+                width: '240px'
+              }
+            }}
           >
             {drawer}
           </Drawer>
         </Box>
-        <Box sx={{p:1}}>
-        <Toolbar/>
+        <Box>
+          <Toolbar />
         </Box>
       </Box>
     </>
