@@ -27,6 +27,7 @@ const Header = () => {
         <li><Link to={'/menu'}>Menu</Link></li>
         <li><Link to={'/about'}>About</Link></li>
         <li><Link to={'/contact'}>Contact</Link></li>
+        <li><NavLink to={'/practice'}>Practice</NavLink></li>
       </ul>
     </Box>
   )
@@ -60,6 +61,8 @@ const Header = () => {
                 <li><NavLink to={'/menu'}>Menu</NavLink></li>
                 <li><NavLink to={'/about'}>About</NavLink></li>
                 <li><NavLink to={'/contact'}>Contact</NavLink></li>
+                <li><NavLink to={'/login'}>Login</NavLink></li>
+                <li><NavLink to={'/signup'}>Signup</NavLink></li>
               </ul>
             </Box>
           </Toolbar>
